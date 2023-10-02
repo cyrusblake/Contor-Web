@@ -1,0 +1,20 @@
+.vid {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.vid>div>img{
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.b {
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    
+  }
+
+  
