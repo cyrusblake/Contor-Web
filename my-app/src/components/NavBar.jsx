@@ -11,7 +11,11 @@ function NavBar (){
 
                 {/* navbar left */}
                 <div className="navbar_left">
-                    <h1>Contor</h1>
+                    <h1>
+                        <Link className='links' to=''>
+                            Contor
+                        </Link>
+                    </h1>
                 </div>
 
                 {/* navbar center */}
