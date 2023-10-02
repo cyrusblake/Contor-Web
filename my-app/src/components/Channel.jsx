@@ -8,7 +8,7 @@ const Channel = ({avatar, name, followers}) => {
             <div className='channel_details'>
                 <img src={avatar} alt="avatar"/>
                 <p>
-                    <Link className='' to="">
+                    <Link className='links' to="">
                         {name}
                     </Link>
                 </p>

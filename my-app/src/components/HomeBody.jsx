@@ -1,9 +1,13 @@
 import React from 'react'
+import '../styles/HomeBody.css'
 
 function HomeBody(){
     return(
         <>
-            <div>
+            <div className='homebody'>
+                <div>
+                    <h1 className='h1'>Home Body</h1>
+                </div>
 
             </div>
         </>
