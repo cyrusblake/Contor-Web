@@ -12,7 +12,7 @@ function NavBar (){
                 {/* navbar left */}
                 <div className="navbar_left">
                     <h1>
-                        <Link className='links' to=''>
+                        <Link className='links' to='/Home'>
                             Contor
                         </Link>
                     </h1>
@@ -42,9 +42,7 @@ function NavBar (){
                             Sign Up
                         </Link>
                     </h3>
-
                 </div>
-                
              </div>
         </>
         

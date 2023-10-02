@@ -23,7 +23,11 @@
 
 .channel>div>img {
     object-fit: contain;
-    margin-right: 5px;
-    width: 40px;
+    margin-right: 10px;
+    width: 30px;
     border-radius: 50%;
+}
+
+.links {
+    text-decoration: none;
 }

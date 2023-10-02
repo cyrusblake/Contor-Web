@@ -1,0 +1,12 @@
+.profilebody {
+    background-color: black;
+    color: white;
+    flex: 1;
+    align-items: center;
+    
+}
+
+.contents {
+    color: white;
+    margin-left: 25px;
+}
