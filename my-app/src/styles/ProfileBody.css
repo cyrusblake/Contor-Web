@@ -40,7 +40,7 @@
     height: 100px;
     margin-top: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    
     border: 2px solid #35353a;
     border-radius: 50%;
     padding: 3px;
@@ -65,12 +65,13 @@
 }
 
 .container {
+    margin-right: 50px;
     margin-bottom: 25px;
-    margin-top: 25px;
     width: auto;
-    max-width: 800px;
-    background-color: white;
+    /* max-width: 800px; */
+    background-color: black;
     padding: 30px;
+    padding-top: 20px;
     box-shadow: 0 2px 16px rgba(0,0,0,.1);
     border-radius: 20px;
 }
@@ -80,7 +81,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 2px solid navy;
+    border-bottom: 2px solid blue;
     position: relative;
     
 }
@@ -88,15 +89,15 @@
 .tab_box .tab_btn{
     font-size: 18px;
     font-weight: 600;
-    color: #919191;
+    color: white;
     background: none;
     border: none;
-    padding: 18px;
+    padding: 10px;
     cursor: pointer;
 }
 
 .tab_box .tab_btn.active {
-    color: navy;
+    color: blue;
 
 }
 
