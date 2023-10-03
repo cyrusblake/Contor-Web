@@ -65,7 +65,7 @@
 }
 
 .container {
-    margin-right: 50px;
+    margin-right: 20px;
     margin-bottom: 25px;
     width: auto;
     /* max-width: 800px; */
@@ -103,6 +103,7 @@
 
 .content_box {
     padding: 20px;
+    padding-left: 0px;
 }
 
 .content_box .content {
