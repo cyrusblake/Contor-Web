@@ -9,6 +9,10 @@
     margin: 10px;
 }
 
+.vid>div>h5 {
+    margin-left: 10px;
+}
+
 .b {
     white-space: nowrap; 
     width: 200px; 
