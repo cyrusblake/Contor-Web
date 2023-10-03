@@ -15,7 +15,7 @@ function Youtube() {
   }, []);
 
   const fetchVideos = () => {
-    const apiKey = 'AIzaSyDxkGMRCxoxS71-nUi7fuBM6WUnBL3_gks';
+    const apiKey = 'AIzaSyCYnVfYb4n8MUL5tvXEQdgIWGnPyrj8u6Y';
     const channelId = 'UCpMRD3Q64R97DpPrgEFRRVA';
     const maxResults = 4;
 
