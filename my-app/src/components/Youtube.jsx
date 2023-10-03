@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/Youtube.css'
+import '../styles/Youtube.css';
 
 function Youtube() {
   const [videos, setVideos] = useState([]);
@@ -15,7 +15,7 @@ function Youtube() {
   }, []);
 
   const fetchVideos = () => {
-    const apiKey = 'AIzaSyDtpMOy3zDcfm2vm4C0F7oDREERBcVJ200';
+    const apiKey = 'AIzaSyDxkGMRCxoxS71-nUi7fuBM6WUnBL3_gks';
     const channelId = 'UCpMRD3Q64R97DpPrgEFRRVA';
     const maxResults = 4;
 
