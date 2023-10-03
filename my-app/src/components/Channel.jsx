@@ -13,7 +13,7 @@ const Channel = ({avatar, name, followers}) => {
                     </Link>
                 </p>
             </div>
-            <p>{followers}</p>
+            <p className='pf'>{followers}</p>
         </div>
     )
 }
