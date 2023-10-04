@@ -1,10 +1,12 @@
 import React from 'react'
 import '../styles/NavBar.css'
 import {Link} from 'react-router-dom'
+import SignUp from './SignUp'
+
 
 function NavBar (){
 
-    
+
     return (
         <>
             <div className="navbar"> 
@@ -16,6 +18,12 @@ function NavBar (){
                             Contor
                         </Link>
                     </h1>
+
+                    {/* <h3 >
+                        <Link className="browse" to=''>
+                            Browse
+                        </Link>
+                    </h3> */}
                 </div>
 
                 {/* navbar center */}
@@ -32,16 +40,20 @@ function NavBar (){
 
                 {/* navbar right */}
                 <div className='navbar_right'>
-                    <h3>
+
+                    {/* <h3>
                         <Link className='links' to=''>
                             Log In
                         </Link>
-                    </h3>
-                    <h3> 
+                    </h3> */}
+                    {/* <h3> 
                         <Link className='links' to=''>
                             Sign Up
+                            
                         </Link>
-                    </h3>
+                    </h3> */}
+                    <SignUp/>
+                    <SignUp/>
                 </div>
              </div>
         </>

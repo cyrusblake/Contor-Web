@@ -6,7 +6,7 @@ function HomeBody(){
         <>
             <div className='homebody'>
                 <div>
-                    <h1 className='h1'>Home Body</h1>
+                    <h1 className='hb1'>Home Body</h1>
                 </div>
 
             </div>
