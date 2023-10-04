@@ -9,9 +9,9 @@ function SignUp (){
     return(
         <>
             <div className="popup" id="popup-1">
-                <div class="overlay"></div>
-                <div class="popup_content">
-                    <div className="close-btn " onclick="togglePopup()">&times;</div>
+                <div className="overlay"></div>
+                <div className="popup_content">
+                    <div className="close-btn " onClick={togglePopup}>&times;</div>
                         <h1>Title</h1>
                         <p>dnjdnvjnvnvnnvvnvjdvnnvnvnvnvnvnvn
                         dknjnvnvndvnnvnvndvnvnvnvnnvnnvnvnvnvnv
@@ -21,8 +21,7 @@ function SignUp (){
                         </p>
                 </div>
             </div>
-            <button onclick="togglePopup()"> Show Popup</button>
-
+            <h3 className="sh3" onClick={togglePopup}>Sign Up</h3>
         </>
     )
 } export default SignUp
