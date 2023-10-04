@@ -28,8 +28,6 @@ function ProfileBody(){
             <div className="profilebody">
                 <div className='banner'></div>
                 <div className="contents">
-
-                    
                     <div className='profile'>
                         <div className="profile__topLeft">
                             <img src="https://files.kick.com/images/user/3259960/profile_image/conversion/4ad636d8-277e-471d-84aa-6feb52e15e21-fullsize.webp" alt=""/>
@@ -68,7 +66,7 @@ function ProfileBody(){
 
                     </div>  
 
-                    <h1 className="h1">Profile Body</h1>
+                    <h1 className="hp1">Profile Body</h1>
                     
                 </div>
             </div>

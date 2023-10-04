@@ -16,6 +16,12 @@ function NavBar (){
                             Contor
                         </Link>
                     </h1>
+
+                    {/* <h3 >
+                        <Link className="browse" to=''>
+                            Browse
+                        </Link>
+                    </h3> */}
                 </div>
 
                 {/* navbar center */}

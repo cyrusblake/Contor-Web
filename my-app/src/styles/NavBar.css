@@ -18,6 +18,11 @@
     padding-left: 20px;
 }
 
+.browse{
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+}
 
 .navbar_center{
     background-color: #1f1f23;
