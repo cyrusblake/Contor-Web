@@ -14,7 +14,7 @@
 }
 
 .popup .popup_content {
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute;
     top: 500%;
     color: white;
@@ -67,9 +67,9 @@
     font-weight: 600;
 }
 
-.sh1 {
+.ih1 {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
 }
 
@@ -96,7 +96,7 @@
 .userI {
     
     margin-top: 10px;
-    width: 475px; 
+    width: 425px; 
     height: 25px;
     border: solid;
     border-width: 4px;
@@ -118,7 +118,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     color: black;
-    width: 500px;
+    width: 445px;
     height: 20px;
     cursor: pointer;
 

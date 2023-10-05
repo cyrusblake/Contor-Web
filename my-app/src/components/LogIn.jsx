@@ -12,7 +12,7 @@ function LogIn (){
                 <div className="overlay"></div>
                 <div className="popup_content">
                     <div className="close-btn " onClick={togglePopup}>&times;</div>
-                    <h1 className='sh1'>Log in to Contor</h1>
+                    <h1 className='ih1'>Log in to Contor</h1>
                     <div>
                         <div className='uu'>
                             <p>Username</p>
