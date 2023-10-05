@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/NavBar.css'
 import {Link} from 'react-router-dom'
 import SignUp from './SignUp'
+import LogIn from './LogIn'
 
 
 function NavBar (){
@@ -52,8 +53,20 @@ function NavBar (){
                             
                         </Link>
                     </h3> */}
-                    <SignUp/>
-                    <SignUp/>
+                  
+                        <LogIn className="cls"/>
+                   
+                    
+                        <SignUp className="cls"/>
+                 
+                    
+                       
+                    
+                    
+                       
+                  
+                    
+                    
                 </div>
              </div>
         </>
