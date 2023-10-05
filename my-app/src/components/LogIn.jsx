@@ -1,18 +1,18 @@
 import React from 'react'
-import '../styles/SignUp.css'
+import '../styles/LogIn.css'
 
-function SignUp (){
+function LogIn (){
 
     function togglePopup(){
-        document.getElementById("popup-2").classList.toggle("active");
+        document.getElementById("popup-1").classList.toggle("active");
     }
     return(
         <>
-            <div className="popup" id="popup-2">
+            <div className="popup" id="popup-1">
                 <div className="overlay"></div>
                 <div className="popup_content">
                     <div className="close-btn " onClick={togglePopup}>&times;</div>
-                    <h1 className='sh1'>Join Contor Today</h1>
+                    <h1 className='sh1'>Log in to Contor</h1>
                     <div>
                         <div className='uu'>
                             <p>Username</p>
@@ -22,16 +22,15 @@ function SignUp (){
                             <p>Password</p>
                             <input className="userI"/>
                         </div>
-                        <div className='sb'>
-                            Sign Up
+                        <div className='lb'>
+                            Log In
                         </div> 
-                        
                     </div>
                     
-                    <button className="b-btn">Already a Contor user? Log in</button>
+                    <button className="b-btn">Don't have an account? Sign Up</button>
                 </div>
             </div>
-            <h3 className="sh3" onClick={togglePopup}>Sign Up</h3>
+            <h3 className="ih3" onClick={togglePopup}>Log In</h3>
         </>
     )
-} export default SignUp
+} export default LogIn

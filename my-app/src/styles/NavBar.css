@@ -34,6 +34,7 @@
     border-radius: 5px;
     overflow: hidden;
     align-items: center;
+   
     
 }
 
@@ -68,8 +69,8 @@
     
 }
 
-.navbar_right>h3 {
-    margin: 20px;
+.navbar_right> {
+    
     font-weight: 600;
 
 }
@@ -78,3 +79,6 @@
     text-decoration: none;
 }
 
+.cls {
+    margin-top: 100px;
+}
