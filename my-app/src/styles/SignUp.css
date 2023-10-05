@@ -1,5 +1,6 @@
 .popup {
     margin-top: 50%;
+    
 }
 
 .popup .overlay {
@@ -14,6 +15,7 @@
 }
 
 .popup .popup_content {
+    border-radius: 10px;
     position: absolute;
     top: 500%;
     color: white;
