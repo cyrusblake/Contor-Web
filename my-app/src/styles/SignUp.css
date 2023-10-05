@@ -121,9 +121,11 @@
     color: black;
     width: 500px;
     height: 20px;
+    cursor: pointer;
 
 }
 
 .b-btn {
     margin-left: 15px;
+    cursor: pointer;
 }
