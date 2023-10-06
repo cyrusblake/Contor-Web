@@ -3,7 +3,11 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
-// import LogIn from './components/LogIn'
+import SignUp from './pages/SignUp'
+import LogIn from './pages/LogIn'
+
+
+
 
 
 function App() {
@@ -14,8 +18,9 @@ function App() {
           <Routes>
               <Route index element={<Home />} />
               <Route path='Home' element={<Home />} />
-              <Route path='Profile' element={<Profile />} />
-              {/* <Route path='LogIn' element={<LogIn/>}/> */}
+              <Route path='Profile' element={<Profile/>}/>
+              <Route path='SignUp' element={<SignUp/>}/>
+              <Route path='LogIn' element={<LogIn/>}/>
           </Routes>
         </BrowserRouter>
       </div>

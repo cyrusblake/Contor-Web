@@ -75,10 +75,16 @@
 
 }
 
+.navbar_right>h3 {
+    margin-right: 30px;
+}
+
+
+
 .links {
     text-decoration: none;
 }
 
-.cls {
+/* .cls {
     margin-top: 100px;
-}
+} */

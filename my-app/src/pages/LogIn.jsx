@@ -1,36 +1,34 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/LogIn.css'
 
 function LogIn (){
 
-    function togglePopup(){
-        document.getElementById("popup-1").classList.toggle("active");
-    }
     return(
         <>
             <div className="popup" id="popup-1">
-                <div className="overlay"></div>
+                
                 <div className="popup_content">
-                    <div className="close-btn " onClick={togglePopup}>&times;</div>
                     <h1 className='ih1'>Log in to Contor</h1>
                     <div>
                         <div className='uu'>
                             <p>Username</p>
-                            <input className="userI"/>
+                            <input className="userI" placeholder='Enter Username'/>
                         </div>
                         <div className='up'>
                             <p>Password</p>
-                            <input className="userI"/>
+                            <input className="userI" placeholder='Enter Password'/>
                         </div>
-                        <div className='lb'>
-                            Log In
-                        </div> 
+                        <div className='lb'>Log In</div> 
                     </div>
+
+                 
                     
-                    <button className="b-btn">Don't have an account? Sign Up</button>
+                    <Link to='/SignUp' className="b-btn">Don't have an account? Sign Up</Link>
+                    
+                    
                 </div>
             </div>
-            <h3 className="ih3" onClick={togglePopup}>Log In</h3>
         </>
     )
 } export default LogIn

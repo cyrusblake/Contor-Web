@@ -1,8 +1,7 @@
 import React from 'react'
 import '../styles/NavBar.css'
 import {Link} from 'react-router-dom'
-import SignUp from './SignUp'
-import LogIn from './LogIn'
+
 
 
 function NavBar (){
@@ -42,31 +41,16 @@ function NavBar (){
                 {/* navbar right */}
                 <div className='navbar_right'>
 
-                    {/* <h3>
-                        <Link className='links' to=''>
-                            Log In
-                        </Link>
-                    </h3> */}
-                    {/* <h3> 
-                        <Link className='links' to=''>
-                            Sign Up
-                            
-                        </Link>
-                    </h3> */}
+                    <h3>
+                        <Link className='links' to='/LogIn'>Log In</Link>
+                    </h3> 
+                    <h3> 
+                        <Link className='links' to='/SignUp'>Sign Up</Link>
+                    </h3>
                   
-                        <LogIn className="cls"/>
-                   
+                        {/* <LogIn className="cls"/> */}
                     
-                        <SignUp className="cls"/>
-                 
-                    
-                       
-                    
-                    
-                       
-                  
-                    
-                    
+                        {/* <SignUp className="cls"/> */}
                 </div>
              </div>
         </>
