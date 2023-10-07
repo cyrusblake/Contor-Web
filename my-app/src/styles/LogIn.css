@@ -92,11 +92,10 @@ text-align: center;
    background-color: blue;
    border-radius: 5px;
    text-align: center;
-   padding-top: 5px;
-   padding-bottom: 5px;
+   border:none;
    color: black;
    width: 445px;
-   height: 20px;
+   height:30px;
    cursor: pointer;
 
 }

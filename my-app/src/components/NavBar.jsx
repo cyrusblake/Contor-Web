@@ -35,7 +35,7 @@ function NavBar (){
                             search
                         </span> 
                     </div>
-                    <input style={{color: 'white'}} type="text" placeholder="Search" />{' '}
+                    <input className="ph" style={{color: 'white'}} type="text" placeholder="Search" />{' '}
                 </div>
 
                 {/* navbar right */}
