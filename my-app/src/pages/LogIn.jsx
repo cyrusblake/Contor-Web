@@ -11,7 +11,7 @@ function LogIn (){
     })
 
     const navigate = useNavigate()
-
+    axios.defaults.withCredentials = true;
     const handleSubmit = (event) => {
         event.preventDefault();
         axios.post('http://localhost:8081/LogIn', values)
@@ -19,7 +19,8 @@ function LogIn (){
             if(res.data.Status === "Success"){
                 navigate('/');
             } else {
-                alert("Error");
+                // alert(res.data.Error);
+                alert("Userame and Password not matched");
             }
             // console.log(res.data);
         })
