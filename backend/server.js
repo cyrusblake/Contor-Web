@@ -45,6 +45,38 @@ app.post('/SignUp', (req, res) => {
     });
 });
 
+app.post('/LogIn', (req, res) => {
+    const sql = "SELECT * FROM USERS WHERE username = ?";
+    pool.query(sql, [req.body.username], (err, data) => {
+        if (err) {
+            console.error("Login error in server:", err);
+            return res.status(500).json({ Error: "Login error in server" });
+        }
+
+        if (data.length === 0) {
+            console.error("No username existed:", req.body.username);
+            return res.status(404).json({ Error: "No username existed" });
+        }
+
+        bcrypt.compare(req.body.password.toString(), data[0].password, (err, response) => {
+            if (err) {
+                console.error("Password compare error:", err);
+                return res.status(500).json({ Error: "Password compare error" });
+            }
+            if (response) {
+                return res.json({ Status: "Success" });
+            } else {
+                return res.json({ Status: "Password not matched" });
+            }
+        });
+    });
+});
+
+
+
+
+
+
 
 app.listen(8081, () => {
     console.log("Running.....");
