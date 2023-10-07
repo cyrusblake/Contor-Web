@@ -10,7 +10,11 @@ const salt = 10;
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:5173"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
 app.use(cookieParser());
 
 
@@ -23,6 +27,27 @@ const pool = mysql.createPool({
 })
 
 // .promise()
+
+const verifyUser = (req, res, next) => {
+    const token = req.cookies.token;
+    if (!token) {
+        return res.json({ Error: "You are not authenticated" });
+    } else {
+        jwt.verify(token, "jwt-secret-key", (err, decoded) => {
+            if (err) {
+                return res.json({ Error: "Token is not okay" });
+            } else {
+                req.username = decoded.username;
+                next();
+            }
+        });
+    }
+}
+
+app.get('/', verifyUser, (req, res) => {
+    return res.json({Status: "Success", username: req.username});
+
+})
 
 app.post('/SignUp', (req, res) => {
     const sql = "INSERT INTO USERS (`username`, `password`) VALUES (?, ?)";
@@ -64,6 +89,9 @@ app.post('/LogIn', (req, res) => {
                 return res.status(500).json({ Error: "Password compare error" });
             }
             if (response) {
+                const username = data[0].username;
+                const token = jwt.sign({username}, "jwt-secret-key", {expiresIn: '1d' });
+                res.cookie('token', token);
                 return res.json({ Status: "Success" });
             } else {
                 return res.json({ Status: "Password not matched" });
@@ -76,7 +104,10 @@ app.post('/LogIn', (req, res) => {
 
 
 
-
+app.get('/logout', (req, res) => {
+    res.clearCookie('token');
+    return res.json({Status: "Success"});
+})
 
 app.listen(8081, () => {
     console.log("Running.....");
