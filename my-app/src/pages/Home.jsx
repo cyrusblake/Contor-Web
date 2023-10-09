@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
 import SideBar from '../components/SideBar'
 import HomeBody from '../components/HomeBody'
+import '../styles/Home.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
