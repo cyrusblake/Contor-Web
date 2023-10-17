@@ -17,7 +17,7 @@ function Youtube() {
   const fetchVideos = () => {
     const apiKey = 'AIzaSyCYnVfYb4n8MUL5tvXEQdgIWGnPyrj8u6Y';
     const channelId = '';
-    const maxResults = 4;
+    const maxResults = 6;
 
     axios.get(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&maxResults=${maxResults}&pageToken=${nextPageToken}`)
       .then(response => {
