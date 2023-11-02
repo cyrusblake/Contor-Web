@@ -24,8 +24,7 @@ function ProfileBody(){
     });
 
     return(
-        <>
-            <div className="profilebody">
+        <div className="profilebody">
                 <div className='banner'></div>
                 <div className="contents">
                     <div className='profile'>
@@ -51,6 +50,7 @@ function ProfileBody(){
                                 <Youtube/>
                             </div>
                             <div className="content">
+                                <Youtube/>
                                 <h2>Content</h2>
                                 <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                             </div>
@@ -70,6 +70,5 @@ function ProfileBody(){
                     
                 </div>
             </div>
-        </>
     )
 } export default ProfileBody
