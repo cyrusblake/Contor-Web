@@ -5,10 +5,26 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
+}
+
+.homebody-content{
+    margin-left: 25px;
 }
 
 .hb1 {
     color: white;
-    margin-left: 25px;
+    /* margin-left: 25px; */
+}
+
+.f-container {
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: auto;
+    /* max-width: 800px; */
+    background-color: black;
+    padding-top: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    border-radius: 0px;
+
 }
