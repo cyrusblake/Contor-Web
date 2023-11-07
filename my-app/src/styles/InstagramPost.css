@@ -1,0 +1,9 @@
+.insta-img {
+    height: 200px;
+    width: 200px;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+}

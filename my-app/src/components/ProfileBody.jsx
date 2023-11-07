@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/ProfileBody.css'
 import Youtube from './Youtube'
+import InstagramPost from './InstagramPost';
+
 
 
 function ProfileBody(){
@@ -48,7 +50,7 @@ function ProfileBody(){
                         <div className="content_box">
                             <div className="content active">
                                 <Youtube/>
-            
+                                <InstagramPost/>
                             </div>
                             <div className="content">
                                 <Youtube/>
