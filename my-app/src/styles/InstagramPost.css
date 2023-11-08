@@ -1,9 +1,12 @@
 .insta-img {
     height: 200px;
     width: 200px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .posts {
     display: flex;
     flex-wrap: wrap;
+    
 }

@@ -20,7 +20,6 @@ function InstagramPost() {
 
   return (
     <div>
-      <h1>Instagram Posts</h1>
       <div className="posts">
         {posts.map((post) => (
           <div key={post.id} className="post">
