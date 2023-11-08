@@ -7,7 +7,7 @@ function InstagramPost() {
 
   useEffect(() => {
     // Replace 'YOUR_ACCESS_TOKEN' with the actual Instagram User Token
-    const accessToken = 'IGQWRPMU9ENFB5a1FhZA1pRdF83dElMYzg2ZAmxyVVowbnhRcjQ5ZAmNRMDlYTXpNN2kwcVB4S0tKN2luRGtGZAEYzOEFCR2NpLTNrN0MxY0hMQTJGMFVibTlRSkNobzk1WWk4aTIxenR6WWo2WDZArVGt6N1lTWWRmVDQZD';
+    const accessToken = '';
 
     axios.get(`https://graph.instagram.com/v13.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`)
       .then((response) => {
