@@ -49,8 +49,6 @@ function ProfileBody(){
                         </div>
                         <div className="content_box">
                             <div className="content active">
-                                <Youtube/>
-                                <InstagramPost/>
                                 <div className='c-section'>
                                     <h2>YouTube</h2>
                                     <Youtube/>
@@ -76,11 +74,9 @@ function ProfileBody(){
                         </div>
 
                     </div>  
-
-                    <h1 className="hp1">Profile Body</h1>
                     
-                    </div>    
-                </div>
+                </div>    
             </div>
+          
     )
 } export default ProfileBody
