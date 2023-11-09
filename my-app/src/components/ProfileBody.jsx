@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/ProfileBody.css'
 import Youtube from './Youtube'
 import InstagramPost from './InstagramPost';
+import Kick from './Kick';
 
 
 
@@ -54,9 +55,20 @@ function ProfileBody(){
                                     <Youtube/>
                                 </div>
                                 <div className='c-section'>
+                                    <h2>Kick</h2>
+                                    <div className='kick-section'>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                    </div>
+                                </div>
+                                <div className='c-section'>
                                     <h2>Instagram</h2>
                                     <InstagramPost/>
                                 </div>
+                                
                             </div>
                             <div className="content">
                                 <Youtube/>

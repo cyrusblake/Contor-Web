@@ -134,3 +134,8 @@
 .c-section {
     margin-top: 20px;
 }
+
+.kick-section {
+    display: flex;
+    flex-wrap: wrap;
+}
