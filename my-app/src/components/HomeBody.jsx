@@ -23,7 +23,6 @@ function HomeBody(){
             
                         </div>
                         <div className="content">
-                              
                             <h2>Content</h2>
                             <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                         </div>
