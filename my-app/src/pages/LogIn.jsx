@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import '../styles/LogIn.css'
 import axios from 'axios'
+import NavBar from '../components/NavBar'
 
 function LogIn (){
 
@@ -33,6 +34,7 @@ function LogIn (){
 
     return(
         <>
+            <NavBar/>
             <div className="popup" id="popup-1">
                 <div className="popup_content">
                     <h1 className='ih1'>Log in to Contor</h1>

@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/ProfileBody.css'
 import Youtube from './Youtube'
 import InstagramPost from './InstagramPost';
+import Kick from './Kick';
 
 
 
@@ -49,14 +50,29 @@ function ProfileBody(){
                         </div>
                         <div className="content_box">
                             <div className="content active">
+
                                 <div className=' c-section'>
+
+                                <div className='c-section'>
+
                                     <h2>YouTube</h2>
                                     <Youtube/>
+                                </div>
+                                <div className='c-section'>
+                                    <h2>Kick</h2>
+                                    <div className='kick-section'>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                        <Kick/>
+                                    </div>
                                 </div>
                                 <div className='c-section'>
                                     <h2>Instagram</h2>
                                     <InstagramPost/>
                                 </div>
+                                
                             </div>
                             <div className="content">
                                 <Youtube/>
@@ -71,9 +87,16 @@ function ProfileBody(){
                                 <h2>About</h2>
                                 <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                             </div>
-                        </div>
-                    </div>    
-                </div>
+  
+                        </div>    
+                    </div>
+
+
+                    </div>  
+                    
+                </div>    
+
             </div>
+          
     )
 } export default ProfileBody

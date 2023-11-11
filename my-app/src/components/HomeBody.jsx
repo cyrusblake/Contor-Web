@@ -6,7 +6,7 @@ function HomeBody(){
       
          <div className='homebody'>
             <div className='homebody-content'>
-                <h1 className='hb1'>Home Body</h1>
+                {/* <h1 className='hb1'>Home Body</h1> */}
                 <div className="f-container">
                     <div className="tab_box">
                         <button className="tab_btn active">Home</button>
