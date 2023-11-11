@@ -68,8 +68,7 @@ function ProfileBody(){
                                     <h2>Instagram</h2>
                                     <InstagramPost/>
                                 </div>
-                                
-                            </div>
+                            </div> 
                             <div className="content">
                                 <Youtube/>
                                 <h2>Content</h2>
@@ -83,11 +82,15 @@ function ProfileBody(){
                                 <h2>About</h2>
                                 <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                             </div>
-                        </div>
+  
+                           
+                    </div>
+
 
                     </div>  
                     
                 </div>    
+
             </div>
           
     )
