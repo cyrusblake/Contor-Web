@@ -50,11 +50,7 @@ function ProfileBody(){
                         </div>
                         <div className="content_box">
                             <div className="content active">
-
-                                <div className=' c-section'>
-
                                 <div className='c-section'>
-
                                     <h2>YouTube</h2>
                                     <Youtube/>
                                 </div>
@@ -72,8 +68,7 @@ function ProfileBody(){
                                     <h2>Instagram</h2>
                                     <InstagramPost/>
                                 </div>
-                                
-                            </div>
+                            </div> 
                             <div className="content">
                                 <Youtube/>
                                 <h2>Content</h2>
@@ -88,7 +83,7 @@ function ProfileBody(){
                                 <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                             </div>
   
-                        </div>    
+                           
                     </div>
 
 
