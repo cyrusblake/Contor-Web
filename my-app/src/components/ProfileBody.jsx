@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/ProfileBody.css'
 import Youtube from './Youtube'
-import InstagramPost from './InstagramPost';
+// import InstagramPost from './InstagramPost';
 import Kick from './Kick';
 
 
@@ -66,7 +66,7 @@ function ProfileBody(){
                             </div>
                             <div className='c-section'>
                                 <h2>Instagram</h2>
-                                <InstagramPost/>
+                                {/* <InstagramPost/> */}
                             </div>
                         </div> 
                         <div className="content">
