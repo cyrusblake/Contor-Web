@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Youtube.css';
 
-function Youtube(){
+function Youtube() {
   const [videos, setVideos] = useState([]);
   const [nextPageToken, setNextPageToken] = useState('');
 
@@ -42,9 +42,8 @@ function Youtube(){
           <h5 className="b">{video.snippet.title}</h5>
         </div>
       ))}
-
       {nextPageToken && (
-        <button className="b_btn" onClick={fetchVideos}>Load More</button>
+        <button onClick={fetchVideos}>Load More</button>
       )}
     </div>
   );
