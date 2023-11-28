@@ -15,7 +15,7 @@ function LogIn (){
     axios.defaults.withCredentials = true;
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:8081/LogIn', values)
+        axios.post('http://localhost:8081/LogIn', values , { withCredentials: true, credentails: "include"})
         .then((res) => {
             if(res.data.Status === "Success"){
                 navigate('/');

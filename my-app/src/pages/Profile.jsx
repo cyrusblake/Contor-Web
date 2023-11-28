@@ -14,7 +14,7 @@ function Profile(){
     
     axios.defaults.withCredentials = true;
     useEffect(() => {
-        axios.get('http://localhost:8081')
+        axios.get('http://localhost:8081', {withCredentials: true, credentails: "include"})
         .then((res) => {
             if(res.data.Status === "Success"){
                 setAuth(true)
@@ -32,7 +32,7 @@ function Profile(){
     }, [])
 
     const handleDelete = () => {
-        axios.get('http://localhost:8081/logout')
+        axios.get('http://localhost:8081/logout', { withCredentials: true, credentails: "include"})
         .then(res => {
             location.reload(true);
         }).catch(err => console.log(err));

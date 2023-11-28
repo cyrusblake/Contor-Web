@@ -9,7 +9,7 @@ function InstagramPost() {
     // Replace 'YOUR_ACCESS_TOKEN' with the actual Instagram User Token
     const accessToken = '';
 
-    axios.get(`https://graph.instagram.com/v13.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`)
+    axios.get(`https://graph.instagram.com/v13.0/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${accessToken}`, { withCredentials: true, credentails: "include"})
       .then((response) => {
         setPosts(response.data.data);
       })

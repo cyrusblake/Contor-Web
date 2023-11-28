@@ -7,7 +7,7 @@ const Kick = () => {
             <iframe 
             width="284" 
             height="200" 
-            src={'https://player.kick.com/cyrusblake89'}
+            src={'https://player.kick.com/cyfl'}
             title="How I&#39;d Learn Full-Stack Web Development (If I Could Start Over)" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
