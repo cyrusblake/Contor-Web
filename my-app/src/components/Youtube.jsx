@@ -12,12 +12,12 @@ function Youtube() {
   }, []);
 
   const fetchVideos = () => {
-    const apiKey = ''; // Store the API key securely
-    const channelId = '';
+    const apiKey = 'AIzaSyDjXCY5EVcEmUnfk4IU_NrD1EMICF2vVQQ'; // Store the API key securely
+    const channelId = 'UCpMRD3Q64R97DpPrgEFRRVA';
     const maxResults = 7;
     const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&maxResults=${maxResults}&pageToken=${nextPageToken}`;
 
-    axios.get(apiUrl)
+    axios.get(apiUrl, { withCredentials: true, credentails: "include"})
       .then(response => {
         const newVideos = [...videos, ...response.data.items];
         setVideos(newVideos);

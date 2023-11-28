@@ -15,7 +15,7 @@ function SignUp (){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:8081/SignUp', values)
+        axios.post('http://localhost:8081/SignUp', values, { withCredentials: true, credentails: "include"})
         .then((res) => {
             if(res.data.Status === "Success"){
                 navigate('/LogIn');
