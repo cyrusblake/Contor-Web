@@ -152,9 +152,10 @@
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .contents {
         margin-left: 25px;
+        margin-right: 0px;
     }
 
     .tab_box .tab_btn {
