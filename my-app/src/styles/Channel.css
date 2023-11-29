@@ -36,3 +36,14 @@
 .ps{
     color: white;
 }
+
+
+@media only screen and (max-width: 600px){
+    .links {
+        display: none;
+    }
+
+    .pf {
+        display: none;
+    }
+}

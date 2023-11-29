@@ -22,3 +22,15 @@
     margin-bottom: 25px;
 }
 
+
+@media only screen and (max-width: 600px){
+    .sidebar {
+        width: 50px;
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+
+    .sidebar_top > h4 {
+        font-size: 6px;
+    }
+}
