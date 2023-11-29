@@ -5,6 +5,7 @@ const Kick = () => {
     return (
         <div className='item'>
             <iframe 
+            className = 'ik'
             width="284" 
             height="200" 
             src={'https://player.kick.com/cyfl'}
