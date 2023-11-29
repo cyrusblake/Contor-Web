@@ -1,52 +1,48 @@
-import React, { useEffect, useState } from 'react';
+// Youtube.jsx
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/Youtube.css';
 
-function Youtube() {
+const Youtube = ({ channelId }) => {
   const [videos, setVideos] = useState([]);
-  const [nextPageToken, setNextPageToken] = useState('');
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch the initial set of videos
-    fetchVideos();
-  }, []);
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/api/youtube/${channelId}`);
+        setVideos(response.data.items);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        // setError('Error fetching data. Please try again later.');
+      }
+    };
 
-  const fetchVideos = () => {
-    const apiKey = 'AIzaSyDjXCY5EVcEmUnfk4IU_NrD1EMICF2vVQQ'; // Store the API key securely
-    const channelId = 'UCpMRD3Q64R97DpPrgEFRRVA';
-    const maxResults = 7;
-    const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&maxResults=${maxResults}&pageToken=${nextPageToken}`;
+    fetchData();
+  }, [channelId]);
 
-    axios.get(apiUrl, { withCredentials: true, credentails: "include"})
-      .then(response => {
-        const newVideos = [...videos, ...response.data.items];
-        setVideos(newVideos);
-        setNextPageToken(response.data.nextPageToken);
-      })
-      .catch(error => {
-        console.error('Error fetching data from YouTube:', error);
-        // You can set an error state or display an error message to the user
-      });
-  };
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
-    <div className='vid'>
-      {videos.map(video => (
-        <div key={video.id.videoId}>
-          <img
-            src={video.snippet.thumbnails.medium.url}
-            alt={video.snippet.title}
-            height={100}
-            width={200}
-          />
-          <h5 className="b">{video.snippet.title}</h5>
-        </div>
-      ))}
-      {nextPageToken && (
-        <button onClick={fetchVideos}>Load More</button>
-      )}
+    <div>
+      <ul>
+        {videos.map((video) => (
+          <li key={video.id.videoId}>
+            <iframe
+              title={video.snippet.title}
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/${video.id.videoId}`}
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+            <p>{video.snippet.title}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default Youtube;
