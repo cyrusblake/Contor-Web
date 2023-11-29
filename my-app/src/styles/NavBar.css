@@ -89,6 +89,18 @@
     text-decoration: none;
 }
 
+.llinks {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .llinks {
+        font-size: 30px;
+        
+    }
+}
+
 /* .cls {
     margin-top: 100px;
 } */

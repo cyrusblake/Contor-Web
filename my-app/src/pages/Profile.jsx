@@ -49,7 +49,7 @@ function Profile(){
                 {/* navbar left */}
                 <div className="navbar_left">
                     <h1>
-                        <Link className='links' to='/Home'>
+                        <Link className='llinks' to='/Home'>
                             Contor
                         </Link>
                     </h1>
@@ -100,7 +100,7 @@ function Profile(){
                 {/* navbar left */}
                 <div className="navbar_left">
                     <h1>
-                        <Link className='links' to='/Home'>
+                        <Link className='llinks' to='/Home'>
                             Contor
                         </Link>
                     </h1>
