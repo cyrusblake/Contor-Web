@@ -133,9 +133,20 @@
 
 .c-section {
     margin-top: 20px;
+    
+}
+
+.yt-section {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .kick-section {
     display: flex;
     flex-wrap: wrap;
+}
+
+.ytVideo {
+    margin-right: 10px;
 }

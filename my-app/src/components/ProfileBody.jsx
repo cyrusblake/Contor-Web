@@ -10,6 +10,7 @@ function ProfileBody(){
 
     const tabs = document.querySelectorAll('.tab_btn');
     const all_content = document.querySelectorAll('.content');
+    const channelId = 'UCpMRD3Q64R97DpPrgEFRRVA';
 
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', (e) => {
@@ -32,7 +33,7 @@ function ProfileBody(){
             <div className="contents">
                 <div className='profile'>
                     <div className="profile__topLeft">
-                        <img src="https://th.bing.com/th/id/R.fa0ca630a6a3de8e33e03a009e406acd?rik=UOMXfynJ2FEiVw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2ff%2fa%2f0%2fc%2f1434020125875430376profile.png&ehk=73x7A%2fh2HgYZLT1q7b6vWMXl86IjYeDhub59EZ8hF14%3d&risl=&pid=ImgRaw&r=0" alt=""/>
+                    <img src="https://th.bing.com/th/id/R.fa0ca630a6a3de8e33e03a009e406acd?rik=UOMXfynJ2FEiVw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2ff%2fa%2f0%2fc%2f1434020125875430376profile.png&ehk=73x7A%2fh2HgYZLT1q7b6vWMXl86IjYeDhub59EZ8hF14%3d&risl=&pid=ImgRaw&r=0" alt=""/>
                         <div className="profile__TLD">
                             <h1>name</h1>
                             <h3>0k followers</h3>
@@ -52,7 +53,60 @@ function ProfileBody(){
                         <div className="content active">
                             <div className='c-section'>
                                 <h2>YouTube</h2>
-                                <Youtube/>
+                                {/* <Youtube channelId={channelId}/> */}
+
+                                <div className='yt-section'>
+                                    <div className="ytVideo">
+                                        <iframe width="284" height="200" src="https://www.youtube.com/embed/nWrc84fDPRY" 
+                                        title="@MarkWiens shows us the world’s best street food…DO NOT WATCH IF HUNGRY!!" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                        </iframe>
+                                        <h4>Video Title</h4>
+                                    </div>
+                                    
+                                    <div className="ytVideo">
+                                        <iframe width="284" height="200" src="https://www.youtube.com/embed/f06SjPc_y1c" 
+                                        title="@Eeowna explains the rise and reign of cozy gaming on YouTube" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                        </iframe>
+                                        <h4>Video Title</h4>
+                                    </div>
+                                    
+                                    <div className="ytVideo">
+                                        <iframe width="284" height="200" src="https://www.youtube.com/embed/bF424rbJYV0" 
+                                        title="@AlexaRivera discusses filming with her family and her favorite collabs | YouTube Watch History" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                        </iframe>
+                                        <h4>Video Title</h4>
+                                    </div>
+                                    
+                                    <div className="ytVideo">
+                                        <iframe width="284" height="200" src="https://www.youtube.com/embed/8hBHQPrVVak" 
+                                        title="@AyChristene tiers the creepy characters that are taking over YouTube" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                        </iframe>
+                                        <h4>Video Title</h4>
+                                    </div>
+
+                                    <div className="ytVideo">
+                                        <iframe width="284" height="200" src="https://www.youtube.com/embed/VjJ9_qnsVrE" 
+                                        title="Celebrate every wave, curl, kink, and coil with @WillOnAWhim, @BiancaReneeToday, and @NaturalReign" frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                        </iframe> 
+                                        <h4>Video Title</h4>
+                                    </div>
+
+                                 
+
+ 
+                                </div>
+
+                               
                             </div>
                             <div className='c-section'>
                                 <h2>Kick</h2>
@@ -67,10 +121,11 @@ function ProfileBody(){
                             <div className='c-section'>
                                 <h2>Instagram</h2>
                                 {/* <InstagramPost/> */}
+                                
                             </div>
                         </div> 
                         <div className="content">
-                            <Youtube/>
+                           
                             <h2>Content</h2>
                             <p>ndbcbhbvfbvbvbvbvbbvbvwb</p>
                         </div>
