@@ -34,7 +34,7 @@ function LogIn (){
 
     return(
         <>
-            <NavBar/>
+            {/* <NavBar/> */}
             <div className="popup" id="popup-1">
                 <div className="popup_content">
                     <h1 className='ih1'>Log in to Contor</h1>

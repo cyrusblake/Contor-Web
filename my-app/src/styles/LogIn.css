@@ -112,3 +112,15 @@ input::placeholder {
    text-decoration: none;
    color: white;
 } 
+
+
+@media only screen and (max-width: 1000px) {
+   
+   .userI {
+      width: 225px;
+   }
+
+   .lb {
+      width: 245px;
+   }
+}
