@@ -12,6 +12,11 @@
     display: flex;
 }
 
+h3 {
+  text-decoration: none;
+  color: white;
+}
+
 .llinks {
   text-decoration: none;
   color: white;
@@ -19,8 +24,9 @@
 
 @media only screen and (max-width: 1000px){
 
-  .llinks {
+  .plinks {
     font-size: 5px;
+    text-decoration: none;
     color: red;
   }
 

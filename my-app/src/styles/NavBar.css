@@ -85,8 +85,9 @@
 
 
 
-.links {
+.plinks {
     text-decoration: none;
+    color: white;
 }
 
 .llinks {
@@ -96,9 +97,18 @@
 
 @media only screen and (max-width: 1000px) {
     .llinks {
-        font-size: 30px;
+        font-size: 15px;
         
     }
+
+    .plinks {
+        font-size: 10px;
+    }
+
+    .navbar_right>h3 {
+        margin-right: 15px;
+    }
+    
 }
 
 /* .cls {
