@@ -77,7 +77,7 @@ function Home(){
                 <div className='navbar_right'>
 
                     <h3 onClick={handleDelete}>
-                        <Link className='links' to=''>Log Out</Link>
+                        <Link className='hlinks' to=''>Log Out</Link>
                     </h3> 
                    
                 
@@ -129,10 +129,10 @@ function Home(){
                 <div className='navbar_right'>
 
                     <h3>
-                        <Link className='links' to='/LogIn'>Log In</Link>
+                        <Link className='hlinks' to='/LogIn'>Log In</Link>
                     </h3> 
                     <h3> 
-                        <Link className='links' to='/SignUp'>Sign Up</Link>
+                        <Link className='hlinks' to='/SignUp'>Sign Up</Link>
                     </h3>
                 
                         {/* <LogIn className="cls"/> */}
