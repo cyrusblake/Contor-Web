@@ -28,6 +28,11 @@
     border-radius: 50%;
 }
 
+.simage {
+    width: 30px;
+    margin-right: 10px;
+}
+
 .links {
     text-decoration: none;
     color: white;

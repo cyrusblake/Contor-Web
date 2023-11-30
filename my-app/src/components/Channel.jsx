@@ -6,7 +6,11 @@ const Channel = ({avatar, name, followers}) => {
     return (
         <div className='channel'>
             <div className='channel_details'>
-                <img src={avatar} alt="avatar"/>
+
+                <Link to="/Profile">
+                    <img className='simage' src={avatar} alt="avatar"/>
+                </Link>
+                
                 <p>
                     <Link className='links' to="/Profile">
                         {name}
