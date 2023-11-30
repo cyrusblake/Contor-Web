@@ -12,3 +12,15 @@
 .app_main {
     display: flex;
 }
+
+.hlinks {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hlinks {
+    font-size: 15px;
+  }
+   
+}

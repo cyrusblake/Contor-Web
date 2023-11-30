@@ -49,7 +49,7 @@ function Home(){
                 {/* navbar left */}
                 <div className="navbar_left">
                     <h1>
-                        <Link className='links' to='/Home'>
+                        <Link className='hlinks' to='/Home'>
                             Contor
                         </Link>
                     </h1>
@@ -101,7 +101,7 @@ function Home(){
                 {/* navbar left */}
                 <div className="navbar_left">
                     <h1>
-                        <Link className='links' to='/Home'>
+                        <Link className='hlinks' to='/Home'>
                             Contor
                         </Link>
                     </h1>

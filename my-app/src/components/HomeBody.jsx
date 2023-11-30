@@ -13,8 +13,7 @@ function HomeBody(){
                         <button className="tab_btn">Youtube</button>
                         <button className="tab_btn">Twitch</button>
                         <button className="tab_btn">Instagram</button>
-                        <button className="tab_btn">Twitter</button>
-                        <button className="tab_btn">TikToc</button>
+                        
                         <div className="line"></div>
                     </div>
                     <div className="content_box">
